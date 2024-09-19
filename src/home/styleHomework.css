@@ -1,3 +1,8 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 .first_container{
     background-image: url("https://t3.ftcdn.net/jpg/05/13/59/72/360_F_513597277_YYqrogAmgRR9ohwTUnOM784zS9eYUcSk.jpg");
     height: 100vh;
@@ -9,6 +14,7 @@
     flex-direction: row;
     gap: 20px;
     padding: 10px;
+    box-sizing: border-box;
 }
 .homework_todo{
     height: 35px;
@@ -27,11 +33,13 @@
 }
 
 .trabajos{
+    padding-top: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 100px;
     font-size: 30px;
-/*     background-color: beige; */
+    box-sizing: border-box;
     height: 90vh;
 }
 .work{
@@ -39,28 +47,70 @@
     flex-direction: column;
     /* background-color: blueviolet; */
     align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
     width: 480px;
-    height: 100%;
+    height: 90%;
 }
 
 
 .tarea_container{
     display: flex;
+    width: 100%;
+    height: 100px;
     flex-direction: column;
+    overflow-x: hidden;
     padding: 5px;
+    box-sizing: border-box;
 }
 
-.tareas {
-    background-color: gray;
+.tarea_container p{
+margin: 0;
+}
+
+
+
+.task-item {
+    background-color: rgb(207, 207, 207);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
+    height: 100px;
     padding: 5px;
+    box-sizing: border-box;
     border-radius: 5px; 
 
 }
+
+.container-tasks{
+    display: flex;
+    
+    flex-direction: column;
+    margin: 0;
+    background-color: aliceblue;
+    padding:5%;
+    gap: 20px;
+    height:max-content ;
+    /* comepensar el desbordamiento en horzontal */
+    box-sizing: border-box;
+    /* aparece cuando hay algun desbordamiento en vertical */
+    overflow-y: auto;
+    width: 100%;
+}
+.container-buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}
+
 .btn_process{
     display: flex;
     font-size: 15px;
+    background-color: rgb(240, 240, 240);
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    justify-content: center;
     align-items: center;
 }
